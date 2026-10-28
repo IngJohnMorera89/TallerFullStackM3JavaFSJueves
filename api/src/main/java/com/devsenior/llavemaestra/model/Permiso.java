@@ -4,7 +4,7 @@ import org.springframework.security.core.Authentication;
 
 public enum Permiso {
 
-    HERAMIENTAS_VER,
+    HERRAMIENTAS_VER,
     HERRAMIENTAS_GESTIONAR,
     ALQUILERES_CREAR,
     ALQUILERES_VER_PROPIOS,

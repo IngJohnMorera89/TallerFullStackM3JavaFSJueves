@@ -5,7 +5,7 @@ import  static com.devsenior.llavemaestra.model.Permiso.*;
 
 public enum Rol {
 ADMIN(Set.of(
-    HERAMIENTAS_VER
+    HERRAMIENTAS_VER,
     HERRAMIENTAS_GESTIONAR,
     ALQUILERES_VER_TODOS,
     ALQUILERES_GESTIONAR,
@@ -15,7 +15,7 @@ ADMIN(Set.of(
 
 CLIENTE(Set.of(
 
-    HERAMIENTAS_VER,
+    HERRAMIENTAS_VER,
     ALQUILERES_CREAR,
     ALQUILERES_VER_PROPIOS,
     ALQUILERES_CANCELAR_PROPIOS
