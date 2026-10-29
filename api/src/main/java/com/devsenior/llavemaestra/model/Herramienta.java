@@ -1,38 +1,45 @@
 package com.devsenior.llavemaestra.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
-@Entity 
-@Table(name= "herramientas")
-public class Herramientas {
+@Entity
+@Table(name = "herramientas")
+public class Herramienta {
 
-    @Id 
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column (nullable = false, unique = true, length = 80)
+    @Column(nullable = false, unique = true, length = 80)
     private String nombre;
 
-    @Enumerated (EnumType.STRING)
-    @Column (nullable = false, length = 20)
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false, length = 20)
     private Categoria categoria;
 
-    @Column (nullable = false)
+    @Column(nullable = false)
     private int precioDia;
 
-    @Column (nullable = false)
+    @Column(nullable = false)
     private int deposito;
 
-    @Column (nullable = false)
+    @Column(nullable = false)
     private int unidades;
 
-    @Column (length = 500)
+    @Column(length = 500)
     private String descripcion;
 
-    @Column (length = 300)
+    @Column(length = 300)
     private String imagenUrl;
 
-    @Column (nullable = false)
+    @Column(nullable = false)
     private boolean activa = true;
 
     public long getId() {
@@ -107,5 +114,4 @@ public class Herramientas {
         this.activa = activa;
     }
 
-    
 }
