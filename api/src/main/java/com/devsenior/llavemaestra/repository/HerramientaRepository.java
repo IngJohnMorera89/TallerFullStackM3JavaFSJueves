@@ -8,9 +8,9 @@ import com.devsenior.llavemaestra.model.Herramienta;
 
 public interface HerramientaRepository extends JpaRepository<Herramienta, Long> {
 
-    List<Herramienta> findAll(String nombre);
-
-    List<Herramienta> findByActivoTrueOrderByNombreAsc();
+   
+    List<Herramienta> findAllByOrderByNombreAsc();
+    List<Herramienta> findByActivaTrueOrderByNombreAsc();
 
     boolean existsByNombreIgnoreCaseAndIdNot(String nombre, Long id);
 

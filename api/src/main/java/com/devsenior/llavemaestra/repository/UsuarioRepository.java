@@ -13,6 +13,6 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 
     boolean existsByEmail(String email);
 
-    List<Usuario> findByOrderByNombreAsc(String nombre);
+    List<Usuario> findAllByOrderByNombreAsc();
 
 }

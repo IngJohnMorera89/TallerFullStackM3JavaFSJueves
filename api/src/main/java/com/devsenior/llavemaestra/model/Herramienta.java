@@ -42,11 +42,11 @@ public class Herramienta {
     @Column(nullable = false)
     private boolean activa = true;
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -86,7 +86,7 @@ public class Herramienta {
         return unidades;
     }
 
-    public void setUnidadesDisponibles(int unidades) {
+    public void setUnidades(int unidades) {
         this.unidades = unidades;
     }
 

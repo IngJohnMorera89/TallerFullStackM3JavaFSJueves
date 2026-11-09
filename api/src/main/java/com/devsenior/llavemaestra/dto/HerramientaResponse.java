@@ -11,13 +11,8 @@ public record HerramientaResponse(
     int deposito,
     int unidades,
     String descripcion,
-    String imagenUr,
+    String imagenUrl,
     boolean activa
     
 ) {
-
-    
-
-
-
 }
