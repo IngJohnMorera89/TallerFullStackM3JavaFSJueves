@@ -62,8 +62,7 @@ public class JwtService {
 
     public boolean esValido(String token, UserDetails userDetails) {
         String email = extraerEmail(token);
-        boolean vencido = extraerClaims(token).getExpiration().before(new Date());
-        return email.equals(userDetails.getUsername()) && !vencido;
+        return email.equals(userDetails.getUsername());
     }
 
 }
