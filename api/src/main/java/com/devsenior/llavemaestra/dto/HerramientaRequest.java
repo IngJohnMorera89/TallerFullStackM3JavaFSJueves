@@ -17,7 +17,7 @@ public record HerramientaRequest(
     @NotNull(message = "La categoria es obligatoria")
     Categoria categoria,
 
-    @Min(value = 100000, message = "El precio por dia mínimo es $100000")
+    @Min(value = 15000, message = "El precio por dia mínimo es $15000")
     int precioDia,
 
     @Min(value = 10000, message = "El deposito mínimo es $10000")
